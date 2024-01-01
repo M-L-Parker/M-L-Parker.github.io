@@ -17,17 +17,17 @@
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Landed</a></h1>
+					<h1 id="logo"><a href="index.html">Michael Parker</a></h1>
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li>
-								<a href="#">Layouts</a>
+								<a href="#">Research</a>
 								<ul>
-									<li><a href="astronomy_research.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li>
+									<li><a href="astronomy_research.html">Astronomy Research</a></li>
+									<li><a href="ai_research.html">AI Research</a></li>
+									<li><a href="publications.html">Publications</a></li>
+									<!-- <li>
 										<a href="#">Submenu</a>
 										<ul>
 											<li><a href="#">Option 1</a></li>
@@ -35,11 +35,11 @@
 											<li><a href="#">Option 3</a></li>
 											<li><a href="#">Option 4</a></li>
 										</ul>
-									</li>
+									</li> -->
 								</ul>
 							</li>
-							<li><a href="elements.html">Elements</a></li>
-							<li><a href="#" class="button primary">Sign Up</a></li>
+							<li><a href="cv.html">CV</a></li>
+							<!-- <li><a href="#" class="button primary">Sign Up</a></li> -->
 						</ul>
 					</nav>
 				</header>
@@ -48,8 +48,7 @@
 				<div id="main" class="wrapper style1">
 					<div class="container">
 						<header class="major">
-							<h2>Left Sidebar</h2>
-							<p>Astrophysics Research Portfolio</p>
+							<h2>Astrophysics Research Portfolio</h2>
 						</header>
 						<div class="row gtr-150">
 							<div class="col-4 col-12-medium">
@@ -83,19 +82,49 @@
 
 								<!-- Content -->
 									<section id="content">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<h3>Dolore Amet Consequat</h3>
-										<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at magna consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
-										<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique.</p>
-										<h3>Sed Magna Ornare</h3>
-										<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus.</p>
-										<ul>
-											<li>Faucibus orci lobortis ac adipiscing integer.</li>
-											<li>Col accumsan arcu mi aliquet placerat.</li>
-											<li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
-											<li>Blandit massa non blandit tempor interdum.</li>
-											<li>Lacinia mattis arcu nascetur lobortis.</li>
-										</ul>
+										<a href="#" class="image fit"><img src="images/Mrk335_rgs.png" alt="" /></a>
+										<h3>Summary</h3>
+										<p>
+											I spent ten years on the cutting-edge of astrophysics research, working at the
+											university of Cambridge and the European Space Agency. I specialised in the study
+											of black hole accretion, leveraging machine learning to uncover new insights from
+											complex, noisy observational data.
+										</p>
+										<p>
+											During this time, I was the lead author of 22 publications, and a co-author of
+											over 100 more, including high profile papers in Nature and Nature Astronomy. 
+											At the time of writing, these papers have been cited 4600 times, with 10 papers 
+											having over 100 individual citations.
+										</p>
+										<h3>Neural Spectroscopy</h3>
+										<p>
+											X-ray spectroscopic modelling generally relies on optimising the parameters of physical or 
+											phenomenological spectral models to minimise a fit statistic (e.g. Chi-squared). These 
+											models can have tens or even hundreds of parameters, and are not differentiable, so 
+											require expensive trial and error based optimisation. This means that parameter estimation
+											on large numbers of spectra becomes very computationally expensive. 
+										</p>
+										<p>
+											In <a href="https://academic.oup.com/mnras/article/514/3/4061/6608880">Parker et al. 2022</a>
+											we explored a neural network based approach to parameter estimation, training the NN to 
+											estimate the parameters of the underlying physical processes without any direct modelling.
+											This was very promising, resulting in a 1000x improvement in spectral throughput with a
+											small decline in accuracy.
+										<figure>
+											<img src="images/NN_spec.png">
+											<figcaption>
+												Parameter values estimated by the neural network as a function of simulated
+												parameter value, for 10,000 simulated supermassive black hole spectra.
+											</figcaption>
+										</figure>
+										</p>
+										<p>
+											We explored this further in <a href="https://iopscience.iop.org/article/10.3847/1538-4357/acd116">Sisk-Reynés et al., 2023</a>,
+											where we used a 1D convolutional network to set limits on the presence of dark matter
+											in galaxy clusters. In this study, we showed that the machine learning approach could 
+											reduce the negative impact of calibration uncertainties by ~90%.
+										</p>
+										<h3>Variance Spectroscopy</h3>
 									</section>
 
 							</div>
@@ -104,19 +133,19 @@
 				</div>
 
 			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
+			<footer id="footer">
+				<ul class="icons">
+					<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+					<!-- <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+					<li><a href="https://www.linkedin.com/in/michael-parker-a10713236/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+					<li><a href="https://github.com/M-L-Parker" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<!-- <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
+				</ul>
+				<ul class="copyright">
+					<li>&copy; 2024 Michael L. Parker. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
 
 		</div>
 
